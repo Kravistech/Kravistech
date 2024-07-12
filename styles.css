@@ -8,20 +8,23 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
     background-color: #ffffff; /* Set background color */
     color: #333; /* Set text color */
 }
 
 .section1{
-  width: 100vw;
+  width: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
 
 }
 
 .section2{
-  width: 100vw;
+  width: 100%;
+  overflow: hidden;
   background-color: #EFF3F7;
   display: flex;
   justify-content: center;
@@ -30,7 +33,7 @@ body{
 .main_container {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 98vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -439,7 +442,8 @@ p {
 }
 /*About us starts*/  
 .row1 {
-  
+  width: 98vw;
+    overflow: hidden;
   display: block;
   height: 95vh;
   display: flex;
@@ -679,7 +683,8 @@ p {
 /* Clients section starts */
 .clients-section {
   position: relative;
-    max-width: 100%;
+  width: 98vw;
+  overflow: hidden;
     
     margin-top: 40px;
     padding-bottom: 10px;
@@ -851,7 +856,8 @@ p {
     align-content: center;
     align-items: center;
     margin-top: 30px;
-
+    width: 98vw;
+    overflow: hidden;
       padding:40px 60px ;
       display: flex;
       background-color: #EFF3F7;
@@ -1032,7 +1038,8 @@ height: 100%;
 
 /*Products section starts */
 .products-section {
-  width:97.3%;
+  width:98vw;
+  overflow: hidden;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -1240,6 +1247,11 @@ height: 100%;
 }
   
 /*our works starts*/
+.container7{
+ width: 90vw;
+ overflow: hidden;
+
+}
 
 .main-container3{
   background-color: #EFF3F7;
@@ -1869,7 +1881,8 @@ form {
 .contact-container {
   background: #fff;
   height: 120vh;
-  width: 99.3vw;
+  width: 98vw;
+  overflow: hidden;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1940,7 +1953,7 @@ form {
     background: #fff;
     height: 120vh;
     width: 350px;
-    position: relative;
+    position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -2052,14 +2065,14 @@ form {
   }
   
   .contact-form {
-    width: 350px;
+  width: 350px;
   padding-bottom: 20px;
   border-color: #000;
   margin-bottom: 40px;
 }
 
   form {
-    position: relative;
+    position: absolute;
     width: 340px;
     margin-left: 0px;
     padding: 10px;
@@ -2153,12 +2166,13 @@ form {
   }
   
 .social-bar {
-  margin-top: 30px;
+  top: 0px;
+  margin-top: 0px;
   margin-left: 50px;
   display: flex;
   align-items: center;
   justify-content:flex-start;
-  position: relative;
+  position: absolute;
   z-index:1     ;
   width: 100px;
 
