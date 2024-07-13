@@ -311,6 +311,7 @@ body{
    }
    
    .button2::after {
+    z-index: 2556868;
     --m-i: linear-gradient(#000, #000);
     --m-o: content-box, padding-box;
     content: "";
@@ -593,12 +594,13 @@ p {
     height: 73vh;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     background-color: #EFF3F7;
   }
   
   
  .row1 .back-container .row {
+  overflow-x: hidden;
     position: relative;
     max-width: 330px;
     max-height: 84%;
@@ -608,7 +610,7 @@ p {
     display: grid;
     grid-template-columns:  1fr;
     grid-gap: 20px;
-    overflow: scroll;
+    overflow-y: scroll;
     border-bottom: hidden;
     margin: 0px;
     padding:  0.5rem 0.6rem;
@@ -1440,7 +1442,7 @@ input:nth-of-type(10):checked ~ main#carousel {
   
 .main-container3{
   background-color: #EFF3F7;
-  height: 60vh;
+  height: 52vh;
   margin: 0;
   display: grid;
   grid-template-rows: 280px 80px;
@@ -1880,7 +1882,7 @@ form {
 /* Layout Stuff */
 .contact-container {
   background: #fff;
-  height: 120vh;
+  /* height: 120vh; */
   width: 98vw;
   overflow: hidden;
   position: relative;
@@ -1953,10 +1955,10 @@ form {
     background: #fff;
     height: 120vh;
     width: 350px;
-    position: absolute;
+    /* position: absolute; */
     background-size: cover;
     background-repeat: no-repeat;
-    display: grid;
+    display: block;
     justify-items: start;
     align-items: start;
   }
@@ -2166,25 +2168,20 @@ form {
   }
   
 .social-bar {
-  top: 0px;
-  margin-top: 0px;
-  margin-left: 50px;
-  display: flex;
-  align-items: center;
-  justify-content:flex-start;
-  position: absolute;
-  z-index:1     ;
-  width: 100px;
+  
+  margin: auto;
+  margin-top: 25px;
 
   .card2 {
+    margin-left: 20px;
     width: fit-content;
     height: fit-content;
     background-color: #EFF3F7;
-    display: flex;
+    /* display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: center; */
     padding: 20px 20px 0px 20px;
-    gap: 20px;
+    /* gap: 20px; */
     
   }
   
@@ -2313,7 +2310,7 @@ form {
   transition-duration: 0.3s;
 }
 
-@media screen(max-width:480px) {
+@media screen and (max-width:480px) {
 
   
 .button6 {
@@ -2331,12 +2328,13 @@ form {
 .button6:hover {
   width: 90px;
 }
- 
+
   
 }
 
 /* all rights css*/
 .rights-reserved {
+  
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2344,13 +2342,20 @@ form {
   color: #666;
 }
 
-@media screen (max-width:480px) {
+@media screen and (max-width:480px) {
+  .copy{
+    position: relative;
+  }
   .rights-reserved {
+    /* position:absolute;
+    top: 777px; */
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 20px;
-    font-size: 7px;
+    font-size: 12px;
     color: #666;
+    padding-left: 30px ;
+  
   }
   
 }
