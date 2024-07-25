@@ -1054,7 +1054,7 @@ height: 100%;
 
 .heading-container {
   width: 100%;
-  margin-bottom: 20px;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1443,13 +1443,10 @@ input:nth-of-type(10):checked ~ main#carousel {
 .main-container3{
   background-color: #EFF3F7;
   height: fit-content;
-  margin: 0;
-  display: grid;
+ 
+
   grid-template-rows: 280px 80px;
-  grid-template-columns: 1fr 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 1fr ;
-  align-items: center;
-  justify-items: center;
-  font-family: 'Poppins', sans-serif;
+  
 }
 .item{
   position: relative;
@@ -1485,14 +1482,7 @@ main#carousel {
   pointer-events: auto;
 }
 
-.heading-container {
-  margin-bottom: 20px;
 
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .heading-container .section-heading1{
   margin-top: 10px;
   margin-bottom: 20px;
