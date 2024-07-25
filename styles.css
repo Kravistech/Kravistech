@@ -958,7 +958,7 @@ p {
     background-color: #EFF3F7;
     flex-direction: column;
     justify-content: center;
-    height: 125vh; /* Full viewport height */
+    height: fit-content; /* Full viewport height */
   }
  .image-info-container1 .image-info-container3 {
     height: fit-content;
