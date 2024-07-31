@@ -33,7 +33,7 @@ body{
 .main_container {
   margin: 0;
   padding: 0;
-  width: 98vw;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -264,7 +264,7 @@ body{
   .content1 {
       display: inline-block;
       position: absolute;
-      top: 50%;
+      top: 44%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
@@ -1201,8 +1201,7 @@ height: 100%;
     }
 
     .container5 {
-        gap: 20px;
-        flex-direction: column;
+        
         align-items: center;
     }
 
