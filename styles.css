@@ -1249,14 +1249,14 @@ height: 100%;
   
 /*our works starts*/
 .container7{
- width: 90vw;
+ width: 98vw;
  overflow: hidden;
 
 }
 
 .main-container3{
   background-color: #EFF3F7;
-  height: 70vh;
+  height: fit-content;
   margin: 0;
   display: grid;
   grid-template-rows: 380px 80px;
