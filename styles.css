@@ -854,15 +854,10 @@ p {
  
 /*key applications*/
   .container {
-    align-content: center;
-    align-items: center;
-    margin-top: 30px;
     width: 98vw;
     overflow: hidden;
       padding:40px 60px ;
-      display: flex;
-      background-color: #EFF3F7;
-      flex-direction: column;
+     
       justify-content: flex-start;
       height: 92vh; /* Full viewport height */
   }
