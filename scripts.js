@@ -56,7 +56,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }
   
+//video playing
+  document.addEventListener('DOMContentLoaded', function () {
+  // Select the video element
+  const video = document.getElementById('background-video');
 
+  // Ensure video starts with 50% volume
+  video.volume = 0.5;
+
+  // Create an IntersectionObserver
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Video is in view, play it
+          video.play();
+          video.muted = false;
+        } else {
+          // Video is out of view, mute it
+          video.muted = true;
+        }
+      });
+    },
+    { threshold: 0.5 } // Trigger when 50% visible
+  );
+
+  // Observe the video element
+  if (video) {
+    observer.observe(video);
+  }
+});
 
   // Key applications starts
   const headings = document.querySelectorAll('.heading');
